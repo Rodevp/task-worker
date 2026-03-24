@@ -3,7 +3,7 @@ type JobState = "pending" | "in_progress" | "completed" | "failed";
 type Job = {
     id: string,
     type: string,
-    state: JobState,
+    jobState?: JobState,
     data:any
 }
 
